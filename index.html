@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <nav class="bg-white text-black">
+    <nav class="container bg-white text-black">
         <div class="text-black w-[20%] h-full flex justify-center items-center text-[#fff] sm:text-[20px] text-[12px] font-bold italic">
            <span class="sm:first-letter:text-[30px] first-letter:text-[20px]"> Gracias_Jr 2</span>
         </div>  
@@ -39,7 +39,7 @@
     <!-- body & footer -->
     <main>
 
-        <div class="pages w-full h-[85vh] home" id="home">
+        <div class="container pages w-full h-[85vh] home" id="home">
             <div class="content">
                 <div class="my-picture">
                     <img src="./Image/IDENTITE2.jpeg" alt="">
@@ -57,7 +57,7 @@
         </div>
 
         <!-- aboute me -->
-        <div class="about w-full h-[95vh] flex flex-col items-start relative bg-[#fafafa11]s bg-white" id="about">
+        <div class="container about w-full h-[95vh] flex flex-col items-start relative bg-[#fafafa11]s bg-white" id="about">
             <span class="title text-black  before:text-black after:border-b-black">ABOUT ME</span>
             <img class="sm:absolute lg:block hidden right-7 w-[300px]" src="./Image//IDENTITE3.jpeg" alt="">
             <div class="w-[80%] sm:w-[60%] h-auto ml-[10%] mt-[9%] absolutes top-[17%] left-[10%] p-3 rounded-md text-black bg-white bg-opacity-80">
@@ -75,7 +75,7 @@
         </div>
 
         <!-- my skills -->
-        <div class="w-full py-7 services h-auto" id="services">
+        <div class="container w-full py-7 services h-auto" id="services">
             <span class="title">MY SKILLS</span>
             <div class="hidden mx-auto w-[85%] h-auto relative text-[15px] sm:flex flex-wrap justify-center items-center space-x-10 bg-[#fafafa11]s p-4 ">
 
@@ -296,12 +296,12 @@
         </div>
 
         <!-- my work -->
-        <div class="page pt-[3%] pl-[7%] w-full h-auto flex flex-col items-start relative bg-[#fafafa11]s bg-white" id="achievments">
+        <div class="container page pt-[3%] pl-[7%] w-full h-auto flex flex-col items-start relative bg-[#fafafa11]s bg-white" id="achievments">
             <h3 class="title text-black  before:text-black after:border-b-black">ACHIEVEMENTS</h3>
 
             <div class="work-container border-zinc-700 border-l border-b pl-7 flex-col mt-7 justify-start">
                 <span class="font-bold text-black text-[17px]">Save</span>
-                <img class="border w-[450px] h-[40vh]" src="./Image/illustration/saveProject.png" alt="">
+                <img class=" w-full max-w-[450px] h-auto aspect-video object-cover" src="./Image/illustration/saveProject.png" alt="">
                 <div class=" h-full flex flex-col items-start justify-start text-black">
                     <p class="w-[60%]">
                         It's a software as a service (saas) designed to offer you a completly satisfying experience
@@ -318,7 +318,7 @@
             
             <div class="work-container border-zinc-700 border-r borders pl-7 flex-col justify-start">
                 <span class="font-bold text-black text-[17px]">Docket</span>
-                <img class="border w-[450px] h-[40vh]" src="./Image/illustration/docket.jpeg" alt="">
+                <img class="w-full max-w-[450px] h-auto aspect-video object-cover" src="./Image/illustration/docket.jpeg" alt="">
                 <div class=" h-full flex flex-col items-start justify-start text-black">
                     <p class="w-[60%]">
                         This project consists in setting up an interface enabling users to post, modify and delete notes.
@@ -336,7 +336,7 @@
         </div> 
 
         <!-- join-me -->
-        <div class="flex flex-col items-center w-full h-[37vh] pb-2 justify-center" id="join-me">
+        <div class="container flex flex-col items-center w-full h-[37vh] pb-2 justify-center" id="join-me">
             <span class="title">Join me at</span>
             <div class="mx-auto w-[85%] h-[15vh] flex items-center justify-center gap-4">
                 <a href="mailto:gracias.daga@epitech.eu" target="_blank" class="border-2 p-2 rounded-full">                    
@@ -376,6 +376,121 @@
         .skill-container{
             background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
             
+        }
+
+        
+
+        /* Ajout de conteneurs max-width pour contrôler la largeur sur grands écrans */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation améliorée */
+nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    height: auto;
+    min-height: 10vh;
+}
+
+/* Section Home améliorée */
+.home {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 90vh;
+    padding: 2rem;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Section About améliorée */
+.about {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+/* Grille de compétences améliorée */
+.services .hidden {
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.skill {
+    flex: 0 1 110px; /* Empêche l'étirement sur grands écrans */
+}
+
+        /* Section réalisations améliorée */
+        .work-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            gap: 3rem;
+        }
+
+        /* Media queries pour grands écrans */
+        @media screen and (min-width: 1600px) {
+            .container {
+                max-width: 1600px;
+            }
+            
+            .content {
+                max-width: 1000px;
+            }
+
+            .my-picture {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about  {
+                width: 70%;
+                max-width: 1000px;
+            }
+
+            .services .hidden {
+                gap: 3rem;
+            }
+
+            .work-container img {
+                max-width: 600px;
+                height: auto;
+            }
+        }
+
+        /* Ajustements pour écrans ultra-larges */
+        @media screen and (min-width: 2000px) {
+            .container {
+                max-width: 1800px;
+            }
+
+            html {
+                font-size: 18px;
+            }
+        }
+
+        /* Ajustements pour le texte sur grands écrans */
+        @media screen and (min-width: 1440px) {
+            .my-name {
+                font-size: 2.5rem;
+            }
+
+            .about p {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
         }
     </style>
     
