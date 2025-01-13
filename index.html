@@ -75,8 +75,8 @@
         </div>
 
         <!-- my skills -->
-        <div class="container w-full py-7 services h-auto" id="services">
-            <span class="title">MY SKILLS</span>
+        <div class="container w-full services h-auto" id="services">
+            <span class="title mt-7">MY SKILLS</span>
             <div class="hidden mx-auto w-[85%] h-auto relative text-[15px] sm:flex flex-wrap justify-center items-center space-x-10 bg-[#fafafa11]s p-4 ">
 
                 <div class="skill w-[110px] h-[110px] flex flex-col items-center justify-center space-y-1 text-black">
@@ -297,7 +297,7 @@
 
         <!-- my work -->
         <div class="container page pt-[3%] pl-[7%] w-full h-auto flex flex-col items-start relative bg-[#fafafa11]s bg-white" id="achievments">
-            <h3 class="title text-black  before:text-black after:border-b-black">ACHIEVEMENTS</h3>
+            <h3 class="title text-black  mt-7 before:text-black after:border-b-black">ACHIEVEMENTS</h3>
 
             <div class="work-container border-zinc-700 border-l border-b pl-7 flex-col mt-7 justify-start">
                 <span class="font-bold text-black text-[17px]">Save</span>
@@ -312,7 +312,7 @@
                     <p>SvelteKit, Pocketbase</p>
 
                     <span class="font-bold mt-4">Live view:</span>
-                    <a href="https://courrier-saver-files.vercel.app" target="_blank" class="text-blue-700 text-[11px] font-bold cursor-pointer hover:underline">Click here</a>
+                    <a href="https://courrier-saver-files.vercel.app" target="_blank" class="border py-[7px] px-[10px] mt-[5px] font-bold cursor-pointer text-black hover:text-white hover:bg-black transition-all duration-300 ease-out">Click here</a>
                 </div>                  
             </div>
             
@@ -329,7 +329,7 @@
                     <p>SvelteKit, Pocketbase</p>
 
                     <span class="font-bold mt-4">Live view:</span>
-                    <a href="https://docket-web.vercel.app/" target="_blank" class="text-blue-700 text-[11px] font-bold cursor-pointer hover:underline">Click here</a>
+                    <a href="https://docket-web.vercel.app/" target="_blank" class="border py-[7px] px-[10px] mt-[5px] font-bold cursor-pointer text-black hover:text-white hover:bg-black transition-all duration-300 ease-out">Click here</a>
                 </div>                  
             </div>
 
@@ -382,15 +382,16 @@
 
         /* Ajout de conteneurs max-width pour contrôler la largeur sur grands écrans */
 .container {
-    width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 /* Navigation améliorée */
 nav {
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 1rem 2rem;
     height: auto;
@@ -399,21 +400,24 @@ nav {
 
 /* Section Home améliorée */
 .home {
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
     min-height: 90vh;
     padding: 2rem;
 }
 
 .content {
-    max-width: 800px;
+    max-width: 100%;
+    /* max-width: 800px; */
     width: 100%;
     margin: 0 auto;
 }
 
 /* Section About améliorée */
 .about {
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 4rem 2rem;
     gap: 2rem;
@@ -421,7 +425,8 @@ nav {
 
 /* Grille de compétences améliorée */
 .services .hidden {
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
     gap: 2rem;
     padding: 2rem;
@@ -434,7 +439,7 @@ nav {
 
         /* Section réalisations améliorée */
         .work-container {
-            max-width: 1200px;
+            /* max-width: 1200px; */
             margin: 0 auto;
             padding: 2rem;
             gap: 3rem;
@@ -473,7 +478,8 @@ nav {
         /* Ajustements pour écrans ultra-larges */
         @media screen and (min-width: 2000px) {
             .container {
-                max-width: 1800px;
+                /* max-width: 1800px; */
+                max-width: 100%;
             }
 
             html {
